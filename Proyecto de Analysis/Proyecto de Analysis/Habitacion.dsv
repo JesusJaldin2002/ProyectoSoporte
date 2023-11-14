@@ -1,0 +1,156 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0115256c-4500-40c5-b32f-0e8e6f15fa89" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Habitacion</ID>
+  <Name>Habitacion</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Conexion</DataSourceID>
+  <Schema>
+    <xs:schema id="Habitacion" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Habitacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4e90748c-32db-4941-a1e2-1c08b05c1eea">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_Habitacion" msprop:DbTableName="Fact_Habitacion" msprop:FriendlyName="Fact_Habitacion" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1ce96e95-649a-42e2-bc52-01c63eaad196">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idTiempo" msprop:FriendlyName="idTiempo" msprop:DbColumnName="idTiempo" msprop:design-time-name="9fda5a25-9f33-40d8-9ecf-aa9603b4b45a" type="xs:int" minOccurs="0" />
+                  <xs:element name="idTipoHabitacion" msprop:FriendlyName="idTipoHabitacion" msprop:DbColumnName="idTipoHabitacion" msprop:design-time-name="12a41616-a92e-47e1-8cde-d8342245a1e7" type="xs:int" minOccurs="0" />
+                  <xs:element name="idHuesped" msprop:FriendlyName="idHuesped" msprop:DbColumnName="idHuesped" msprop:design-time-name="a3972747-74ad-4512-9824-8d66c0ca7503" type="xs:int" minOccurs="0" />
+                  <xs:element name="Estadia" msprop:FriendlyName="Estadia" msprop:DbColumnName="Estadia" msprop:design-time-name="e594cc73-9a7d-4a56-b880-083911a0122a" type="xs:int" minOccurs="0" />
+                  <xs:element name="cantDemanda" msprop:FriendlyName="cantDemanda" msprop:DbColumnName="cantDemanda" msprop:design-time-name="c0bc759b-10fc-4529-8183-a0900f413157" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Huesped" msprop:DbTableName="Dim_Huesped" msprop:FriendlyName="Dim_Huesped" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0c4f8c2d-ffb6-4c33-bbfd-3acbc53dd7d2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idHuesped" msprop:FriendlyName="idHuesped" msprop:DbColumnName="idHuesped" msprop:design-time-name="97135fdc-86ca-4023-9b40-2104d6e7ff4e" type="xs:int" />
+                  <xs:element name="fechanacimiento" msprop:FriendlyName="fechanacimiento" msprop:DbColumnName="fechanacimiento" msprop:design-time-name="62910631-1849-49d2-8139-d577e754fe0f" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="edad" msprop:FriendlyName="edad" msprop:DbColumnName="edad" msprop:design-time-name="fe2b0ba3-f166-4388-9672-b90c068cfc00" type="xs:int" minOccurs="0" />
+                  <xs:element name="nacionalidad" msprop:FriendlyName="nacionalidad" msprop:DbColumnName="nacionalidad" msprop:design-time-name="02a1ff92-7637-459f-b875-af4f65c1fb41" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="genero" msprop:FriendlyName="genero" msprop:DbColumnName="genero" msprop:design-time-name="5a36124b-1171-47f8-85ea-b63587fb6d29" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="tipo" msprop:FriendlyName="tipo" msprop:DbColumnName="tipo" msprop:design-time-name="414cbc89-3887-41a1-ab66-3444b77fe2ba" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="trabajo" msprop:FriendlyName="trabajo" msprop:DbColumnName="trabajo" msprop:design-time-name="8b0f9193-03ba-4dc1-93e9-de5588d0bf08" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Tiempo" msprop:DbTableName="Dim_Tiempo" msprop:FriendlyName="Dim_Tiempo" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="445a2af9-7a46-42aa-adc9-1691d71f90b3">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idTiempo" msprop:FriendlyName="idTiempo" msprop:DbColumnName="idTiempo" msprop:design-time-name="cfb9fcfe-008c-4bdd-a0f7-660d7907f8d9" type="xs:int" />
+                  <xs:element name="mes" msprop:FriendlyName="mes" msprop:DbColumnName="mes" msprop:design-time-name="079a8c43-e92f-42c7-a0ff-a4fd9d61a63a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="trimestre" msprop:FriendlyName="trimestre" msprop:DbColumnName="trimestre" msprop:design-time-name="a57c46f2-c5fe-416e-8a20-a165e787640b" type="xs:int" minOccurs="0" />
+                  <xs:element name="anio" msprop:FriendlyName="anio" msprop:DbColumnName="anio" msprop:design-time-name="df146701-bc75-4ac4-8e6b-181ac5fa7918" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_TipoHabitacion" msprop:DbTableName="Dim_TipoHabitacion" msprop:FriendlyName="Dim_TipoHabitacion" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6a7c4d8b-2523-4793-b99f-dd1c1fb67a21">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idTipoHabitacion" msprop:FriendlyName="idTipoHabitacion" msprop:DbColumnName="idTipoHabitacion" msprop:design-time-name="61fe4dcc-db41-497a-9478-d234e6bb8e41" type="xs:int" />
+                  <xs:element name="tipoHabitacion" msprop:FriendlyName="tipoHabitacion" msprop:DbColumnName="tipoHabitacion" msprop:design-time-name="04cfa404-34b2-423a-9443-d1d575048801" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Huesped" />
+          <xs:field xpath="idHuesped" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Tiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Tiempo" />
+          <xs:field xpath="idTiempo" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_TipoHabitacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_TipoHabitacion" />
+          <xs:field xpath="idTipoHabitacion" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_Habi__idTip__6FE99F9F" refer="dbo_Dim_TipoHabitacion_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Habitacion" />
+          <xs:field xpath="idTipoHabitacion" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Habi__idTie__6EF57B66" refer="dbo_Dim_Tiempo_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Habitacion" />
+          <xs:field xpath="idTiempo" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_Habi__idHue__70DDC3D8" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Habitacion" />
+          <xs:field xpath="idHuesped" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Habitacion xmlns="" />
+  </Schema>
+</DataSourceView>

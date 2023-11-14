@@ -1,0 +1,188 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ba8658ba-b2cd-4370-8000-449cb05b9799" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Habitacion</ID>
+  <Name>Habitacion</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="2257cbb1-0a03-4384-8d93-d38aab3856b0">
+      <ID>Dim Tipo Habitacion 2</ID>
+      <Name>Dim Tipo Habitacion 2</Name>
+      <DimensionID>Dim Tipo Habitacion 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dd8c0011-a52b-4680-b93b-6e4c72fdf696">
+          <AttributeID>Id Tipo Habitacion</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="117fb56d-e312-43cb-8d75-e6d09430065f">
+      <ID>Dim Tiempo 2</ID>
+      <Name>Dim Tiempo 2</Name>
+      <DimensionID>Dim Tiempo 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a852724c-1240-4c31-95a2-5de5deddfb09">
+          <AttributeID>Id Tiempo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ff13941a-6ab9-43fe-aa6e-c122f8fc1b4f">
+      <ID>Dim Huesped 3</ID>
+      <Name>Dim Huesped 3</Name>
+      <DimensionID>Dim Huesped 3</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4f801416-131b-4e75-8229-7558db114dba">
+          <AttributeID>Id Huesped</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3160d040-37b2-4299-bc1d-42dce9b3a815">
+      <ID>Fact Habitacion</ID>
+      <Name>Fact Habitacion</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c9cd0244-e4b6-4c03-8c13-5a179c96844b">
+          <ID>Estadia</ID>
+          <Name>Estadia</Name>
+          <Source dwd:design-time-name="c728911a-93d2-420d-8a23-1697fc89afd2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d7cd7d5b-954e-4987-8e35-48e9a4c344d6">
+              <TableID>dbo_Fact_Habitacion</TableID>
+              <ColumnID>Estadia</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="55970f33-302a-4644-a65a-bb7063e4d5a0">
+          <ID>Cant Demanda</ID>
+          <Name>Cant Demanda</Name>
+          <Source dwd:design-time-name="a76da342-8414-4600-94ad-f7caa57f3aeb">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ad4596c4-6f80-4e5a-a801-48348b53dd32">
+              <TableID>dbo_Fact_Habitacion</TableID>
+              <ColumnID>cantDemanda</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="61af6719-f795-4e2c-b2ef-2d88952e328d">
+          <ID>Recuento Fact Habitacion</ID>
+          <Name>Recuento Fact Habitacion</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a69a5c83-4686-4d77-9e49-522960955fe1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6c6b8cf4-2e87-4348-86a2-68f762e97af9">
+              <TableID>dbo_Fact_Habitacion</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="605f8161-c91c-4495-94ff-c94fb2a73af2">
+          <CubeDimensionID>Dim Tipo Habitacion 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b5efbcc2-c9d6-4b00-8d9b-cd9a4f790cfc">
+              <AttributeID>Id Tipo Habitacion</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ce9ac8d0-d59c-48a2-b32f-f15d41db2c39">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ef77a8ac-867d-4c0c-bd6f-85cdd2715f94">
+                    <TableID>dbo_Fact_Habitacion</TableID>
+                    <ColumnID>idTipoHabitacion</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="de3d4ff1-7c15-4140-b47f-cd9ece8f0b2d">
+          <CubeDimensionID>Dim Tiempo 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4b480a3a-521f-4b55-a59d-d53c769d5b97">
+              <AttributeID>Id Tiempo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6479eff9-1cd9-4f12-99fd-730acae93d4c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="956408e7-47e1-4ffc-b9bd-f852fb33bcb1">
+                    <TableID>dbo_Fact_Habitacion</TableID>
+                    <ColumnID>idTiempo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0e07cd5f-9668-45be-a393-1a30017be315">
+          <CubeDimensionID>Dim Huesped 3</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="15e44fef-7c0b-4220-9b9b-59fe8ee2bc6f">
+              <AttributeID>Id Huesped</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b8e6ef72-60f5-4cdc-a6fc-39f220c74088">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="78f2c45f-6032-4e5b-be52-c84c45dcf237">
+                    <TableID>dbo_Fact_Habitacion</TableID>
+                    <ColumnID>idHuesped</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="1895bb84-315e-4914-885b-35d278d1affb">
+    <DataSourceViewID>Habitacion</DataSourceViewID>
+  </Source>
+</Cube>
